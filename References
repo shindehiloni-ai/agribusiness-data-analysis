@@ -1,1 +1,53 @@
+Data Sources and References
+
+This file documents the datasets and public information sources identified for the project *Agricultural Market Price Trend Analysis and Forecasting Using Indian Mandi Data*.
+
+1. Primary Dataset
+
+Dataset Name: Daily Commodity Prices India
+
+Platform: Kaggle
+
+Dataset URL: https://www.kaggle.com/datasets/khandelwalmanas/daily-commodity-prices-india
+
+Purpose: This dataset is the primary source for analyzing historical agricultural commodity market prices in India. It will be inspected to identify available price fields, dates, commodities, and market locations.
+
+ 2. Additional Public Data Sources
+
+AGMARKNET
+URL: https://agmarknet.gov.in/
+
+Purpose: Agricultural marketing information, including mandi market prices and related market information.
+
+ Open Government Data Platform India
+URL: https://www.data.gov.in/
+
+Purpose: Identify supplementary government datasets related to agricultural markets, commodities, and production.
+
+ Directorate of Economics and Statistics
+URL: https://desagri.gov.in/
+
+Purpose: Potential supplementary source for agricultural production, area, and yield statistics if the project scope expands beyond price analysis.
+
+India Meteorological Department
+URL: https://mausam.imd.gov.in/
+
+Purpose: Potential source for weather and rainfall information if a separate analysis of weather and agricultural market trends is undertaken.
+
+3. Planned Use of Sources
+
+The Kaggle dataset will be the primary dataset for the project. Additional sources will be consulted only when required for supplementary analysis or verification.
+
+The planned analysis includes:
+- Historical commodity price trends
+- Minimum, maximum, and modal price comparisons
+- Price fluctuations and percentage changes
+- Comparisons across selected markets and commodities
+- Exploratory forecasting for a selected commodity-market series, if suitable data is available
+
+4. Data Usage and Attribution
+
+Before downloading, using, or redistributing any dataset, review its licence, terms of use, and attribution requirements. Dataset fields, coverage, units, and source metadata should be verified before analysis.
+
+Project status: Sources identified during the planning stage. Their use and suitability will be confirmed as the project progresses.
 

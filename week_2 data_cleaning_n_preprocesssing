@@ -1,0 +1,143 @@
+# Week 2: Data Cleaning and Preprocessing Strategy
+
+## 1. Overview
+
+This task entails developing a data cleaning and preprocessing strategy for the Agribusiness Data Analysis project. The aim of the current project is to utilise the Daily Commodity Prices India dataset to understand agricultural market prices and perform exploratory data analysis and future price prediction.
+
+The raw agricultural data may have several issues, including missing values, duplicates, inconsistencies, invalid prices, and require transformation. Through proper cleaning and preprocessing steps, one can ensure high-quality data that facilitates subsequent analysis and modelling.
+
+## 2. Objective
+
+The objective is to design a data cleaning and preprocessing strategy for analysing agricultural market prices and predicting future prices.
+
+Specifically, the task will address the following:
+
+1. Identifying missing values and duplicates
+
+2. Checking data types, date formats, and price validity
+
+3. Investigating invalid values and outliers
+
+4. Applying filtering and addressing missing values
+
+5. Understanding normalisation, standardisation, and encoding
+
+6. Developing features for agricultural price analysis
+
+7. Establishing a reproducible preprocessing approach
+
+## 3. Dataset Description
+
+The name of the dataset is Daily Commodity Prices India . The data source is Kaggle . The link is as follows: https://www.kaggle.com/datasets/khandelwalmanas/daily-commodity-prices-india
+
+The dataset consists of agricultural market price information, including State , District , Market , Commodity , Variety , Grade , Arrival_Date , Min_Price , Max_Price , and Modal_Price . The set of columns may differ depending on the file within the dataset.
+
+It is possible to utilise the data to investigate patterns in agricultural market prices.
+
+## 4. Data Quality Assessment
+
+The following items will be investigated in terms of data quality:
+
+1. Are there any missing values?
+
+2. Are there any duplicates?
+
+3. Are date/time values in the correct format?
+
+4. Are there any inconsistencies in text?
+
+5. Are there any invalid prices?
+
+6. Are there any outliers?
+
+7. Are Price_Range, Previous_Price, and Rolling_Mean_7 valid?
+
+## 5. Data Cleaning Strategy
+
+The following steps will be taken to clean the data:
+
+1. Load the data and investigate the overall structure.
+
+2. Conduct item 1 – item 7 under ‘Data Quality Assessment’.
+
+3. Standardise the text, where necessary.
+
+4. Convert Arrival_Date to a datetime format.
+
+5. Convert price columns to numeric.
+
+6. Investigate missing values and determine how to treat them.
+
+7. Investigate invalid price values and remove duplicates, where applicable.
+
+8. Explore outliers and determine whether to remove them.
+
+9. Save a copy of the cleaned data separately to avoid overwriting the initial file.
+
+10. Reinvestigate the data to ensure that everything is in order.
+
+## 6. Data Filtering
+
+The data will be filtered to remove irrelevant or unusable records. Additionally, observations with invalid price values will be removed. It will be necessary to utilise date ranges, commodities, and markets when filtering the data only if specific research questions require so. On the other hand, outliers must be investigated but should not be removed unless there is conclusive evidence that they are erroneous.
+
+## 7. Data Preprocessing
+
+### A. Missing-Value Treatment
+
+Missing values will be treated individually for each column. As such, it will be possible to utilise either numeric or categorical value imputation, depending on the data type. For time-related columns, it will be critical to ensure that all missing values are appropriately addressed.
+
+Some columns, such as Previous_Price , may have naturally occurring missing values if a commodity had not been available on a specific day.
+
+### B. Normalisation
+
+Min-Max normalisation can be applied to price columns, particularly if one is going to use a model that is sensitive to data ranges.
+
+### C. Standard Scaling
+
+Standard scaling can be utilised for numeric columns to ensure that all independent variables follow a standard normal distribution. It is crucial for many statistical and machine learning algorithms.
+
+### D. One-Hot Encoding
+
+One-Hot Encoding can be applied to categorical variables, including Commodity and State, to convert them into numerical format for analysis and modelling.
+
+### E. Feature Engineering
+
+Feature engineering will play a critical role in this project, considering the type of data. It will be particularly essential to create features for day, month, year, and quarter from the arrival date, as well as price range, previous price, and 7-day rolling mean. All features that require previous observations to compute subsequent values must be sorted in ascending order to avoid data leakage.
+
+## 8. Preprocessing Workflow
+
+Raw Dataset → Initial Investigation → Data Cleaning → Missing-Value Assessment → Validation and Filtering → Feature Engineering → Encoding and Scaling → Final Checks → EDA and Predictive Modelling
+
+It will be critical to apply transformations, such as imputers, encoders, and scalers, only to training data when predictive modelling is conducted.
+
+## 9. Reproducibility
+
+Reproducibility plays a significant role in data analysis and scientific research, in general. To enhance reproducibility, it will be critical to make sure that the same file is used in the future, as necessary. That being so, it will also be essential to structure the code in an organised manner.
+
+The final cleaning workflow should indicate the following:
+
+• The source file
+
+• Missing values and duplicates before and after cleaning
+
+• Records that were removed and the rationale
+
+• Transformations that were applied
+
+• Output file names and software package
+
+## 10. Expected Outcome
+
+This task will yield a comprehensive but succinct strategy for cleaning agricultural market price data. It will facilitate subsequent analysis and modelling in the following weeks.
+
+Specifically, the outcome will enable Week 3 Exploratory Data Analysis , Week 4 Predictive Modelling , and Week 5 Model Evaluation and Reporting.
+
+## 11. References
+
+1. Kaggle — Daily commodity prices India . (n.d.). Kaggle . Web.
+
+2. pandas: Powerful data analysis with Python . (n.d.). Python Official Website. Web.
+
+3. Preprocessing data . (n.d.). scikit-learn Official Website. Web.
+
+4. Pipeline: chain multiple estimators together . (n.d.). scikit-learn Official Website. Web.

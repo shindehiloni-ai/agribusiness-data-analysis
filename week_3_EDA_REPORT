@@ -1,0 +1,137 @@
+# Week 3: Exploratory Data Analysis Report
+
+## 1. Introduction
+
+This report contains the results of performing an Exploratory Data Analysis (EDA) for the purpose of the Agribusiness Data Analysis internship. The objective of the EDA is to investigate patterns of agricultural commodity prices in India using the Daily Commodity Prices India dataset on Kaggle.
+
+The EDA allows to explore the dataset, identify summary statistics, detect outliers and understand trends by visualising statistical plots prior to performing predictive modelling.
+
+## 2. Dataset Description
+
+The current analysis was performed on a Daily Commodity Prices India dataset, which can be found at the following link:
+
+Daily Commodity Prices India Kaggle Dataset
+
+The file used for the analysis was 2001.csv, which was processed using Python, Pandas, Numpy, Matplotlib, and Seaborn libraries in Jupyter Notebook.
+
+The variables used in the analysis are State, District, Market, Commodity, Variety, Grade, Arrival_Date, Min_Price, Max_Price, Modal_Price, Modal_Price_Normalized, Month, Quarter, Price_Range.
+
+## 3. Objective
+
+The objectives of the analysis are as follows:
+
+1. Understand the structure and content of the Daily Commodities Prices India dataset.
+
+2. Describe the distribution of agricultural commodity prices.
+
+3. Explore the daily and monthly variations in prices.
+
+4. Compare the median of the modal prices of commodities and states.
+
+5. Evaluate the relationships between variables reflecting commodity prices.
+
+6. Detect outliers and uncommon observations.
+
+7. Report the summary statistics and visualisations.
+
+## 4. Methodology
+
+The objectives were achieved by performing an EDA using the following steps:
+
+1. Imported the daily commodity price data file into the Python development environment.
+
+2. Viewed the dataframe’s column contents and records.
+
+3. Assessed summary statistics of price-related variables.
+
+4. Plotted the distribution of prices.
+
+5. Visualised daily variations in prices.
+
+6. Assessed monthly variations in prices.
+
+7. Compared the median of the modal prices for commodities and states.
+
+8. Evaluated the relationship between variables using a heatmap.
+
+9. Detected outliers and uncommon observations.
+
+10. Interpreted the results of the analysis.
+
+## 5. Results
+
+### Price Distribution
+
+The price distribution was visualised using a histogram, which illustrates that the majority of the observations are found in the lower price category, with a tail extending to the right.
+
+The daily trends visualisation reflects the variations in the average prices for the commodities included in the analysis. As seen in the visualisation, there is significant variance between the recorded prices on a daily basis. However, the trends cannot be applied to a specific commodity since the dataframe includes multiple commodities.
+
+The trends in the monthly average prices of commodities illustrate that the lowest average price was recorded in April, while the highest average price was recorded in August. Therefore, there is variance between the monthly averages captured in the dataframe.
+
+However, the trends should not be used to identify seasonal influences on the prices of specific commodities since the dataframe includes multiple commodities.
+
+The top-10 commodities visualisation illustrates the differences in the median of the modal prices for the listed commodities. According to the plot, Cashewnuts had the highest median of the modal prices among the displayed commodities, which was followed by Cummin seed (Jeera) and Black pepper.
+
+When comparing the average prices of commodities in different states, the visualisation below shows that amongst the ten displayed states, Kerala had the highest median of the modal prices. The differences between the states were partially driven by the mix of commodities, grades, and markets.
+
+As displayed in the heatmap, the minimum and maximum prices were correlated at approximately 0.93, while the minimum and modal prices were correlated at approximately 0.96. Moreover, the modal price was perfectly correlated with the modal price normalized (1).
+
+The identified correlation coefficients illustrate that the variables have a strong linear relationship. However, the relationship is not necessarily causal.
+
+The outlier flag distribution reflects the number of outliers detected in the dataframe. According to the visualisation below, there were 823 outliers out of 11603 records, which accounts for approximately 7.1% of all observations. The outliers should be reviewed to determine whether they reflect genuine high prices.
+
+## 6. Visualisations
+
+The results of the EDA are visualised using the following graphics:
+
+1. Distribution of commodity modal prices.
+
+2. Daily commodity price trends.
+
+3. Monthly average modal prices.
+
+4. Correlation heatmap.
+
+5. Boxplot illustrating potential extreme values of modal prices.
+
+6. Top 10 commodities in terms of median of modal prices.
+
+7. Top 10 states in terms of median of modal prices.
+
+8. Outlier flag distribution.
+
+9. Summary statistics of price-related variables.
+
+10. Example observations flagged as outliers.
+
+The visualisations are described in detail in the accompanying Week 3 EDA Word report.
+
+## 7. Limitations
+
+1. The analysis was performed using multiple commodity categories and markets, which limits the ability to assess the trends specific for a particular good.
+
+2. When comparing the states, the differences in commodities, grades, and markets affect the results.
+
+3. The outliers might not be actual extremes but rather reflect genuine market prices.
+
+4. The fields provided in the Kaggle dataframe do not include data on yield, production volumes, weather conditions, or resource usage.
+
+5. The analysis of the monthly average prices is insufficient to assess seasonal trends for individual commodities.
+
+## 8. Conclusions
+
+This EDA allowed to familiarise with the structure and content of the Daily Commodities Prices India dataset.
+
+The analysis revealed that the price distribution follows a right-skewed pattern, there are significant variations in prices on a daily and monthly basis, commodities and states differ in their average prices, the variables have strong linear relationships, and there is a small proportion of outliers that should be reviewed.
+
+Therefore, the results of the EDA contribute to a better understanding of the agricultural commodity prices in India and can be used as a foundation for further agribusiness-oriented analyses and predictive modelling.
+
+However, it is recommended to consider the context and nuances of the analysed data prior to drawing final conclusions.
+
+## 9. Delivered Product
+
+Week 3 Task: Exploratory Data Analysis Report Design
+
+The EDA was performed in Jupyter Notebook by generating visualisations, conducting calculations, and recording summary statistics and observations in a Word report. The report contains the results of the EDA in the form of visualisations and their detailed description.
+
+The final deliverable of the week 3 task is a Jupyter Notebook file and a Word document that describes the performed analysis and contains the key visualisations as images.

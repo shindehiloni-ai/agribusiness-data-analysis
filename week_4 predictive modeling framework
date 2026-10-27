@@ -1,0 +1,54 @@
+Week 4: Predictive Modelling
+Overview
+This task was focused on creating a machine learning framework to predict future performance in an agribusiness scenario. Using the Daily Commodity Prices India dataset, I built a regression framework to predict the modal price of commodities and compared various machine learning models.
+
+Objectives
+To create:
+Numerical and categorical features.
+Use StandardScaler for numerical features. Use OneHotEncoder for categorical features.
+Training and comparing various regression models.
+Evaluate based on MAE, RMSE and R squared score.
+Identify the best performing model.
+
+ Methodology
+Data was first cleaned to convert the arrival date into the correct format and remove any missing data for the target price and dates. The numerical features were: commodity code, year, month, day of week, and quarter. Categorical features were: state, district, market, commodity, variety, and grade.
+
+A pipeline was created which contained StandardScaler, OneHotEncoder and imputation techniques. This was split into a training and test set. The data was split sequentially with 80% for training and 20% for testing.
+
+Models compared were:
+Linear Regression
+Ridge Regression
+Lasso Regression
+ElasticNet
+Decision Tree
+Random Forest
+Extra Trees
+AdaBoost
+Gradient Boosting
+K-Nearest Neighbours
+Support Vector Regression
+
+ Results
+The best performing model was Random Forest which had results:
+
+MAE: 216.22
+RMSE: 807.07
+R Squared: 0.679
+Negative predictions: 0
+
+This means the best model out of all the models was Random Forest. However there is still some error in the predictions so further validation will be needed.
+
+Technologies Used
+Python
+Pandas
+NumPy
+Scikit-Learn
+Matplotlib
+Jupyter Notebook
+Git/GitHub
+
+
+This task shows how machine learning can be used to analysie commodity market data and predict prices. By comparing various models, we were able to identify the best performing one which was Random Forest, based on lowest RMSE. This can be used for various other problems in agribusiness such as predicting crop yields, demand and resources as long as the right data is used and features are available.
+
+Report
+A full report for Week 4 has been made containing information about the modelling process, the pre-processing, comparison of models, evaluation and screenshots of the notebook.

@@ -1,0 +1,39 @@
+Week 5 – Model Evaluation and Reporting Strategy
+
+Overview
+
+To evaluate the regression models developed using the Daily Commodity Prices India data set. This helped me understand what model gave the best results and identify any errors.
+
+Objectives
+
+Evaluate the models using MAE, RMSE and R2 Score Compare different models and how they performed. Produce graphics to show actual and predicted values. Identify any errors and potential issues with the model. Produce an executive summary with recommendations.
+
+Methodology
+
+The models were tested on the testing set. Using the Mean Absolute Error (MAE) to calculate the average error by taking the absolute value of the error. Calculating the Root Mean Squared Error (RMSE) to see larger errors were weighted a lot. Finally the R2 score tells you how much of the variability in commodity prices can be explained by the model.
+
+We produced some graphics to help us understand the models. We compared the RMSE score. Plotted a scatter graph to show actual vs predicted. Then a histogram to look at the errors.
+
+Results
+
+Decision Tree gave the lowest RMSE.
+
+MAE = 271.08 RMSE = 788.17 R2 Score = 0.690
+
+Random Forest had a lower MAE than Decision Tree but had a higher RMSE. Decision Tree was chosen because of the RMSE but other metrics were considered.
+
+Limitations and Improvements
+
+The model might not consider all the factors that affect the commodity price such as weather, supply, demand, transport costs and government policies. Some predictions had high errors. To improve in the future we could look at using historical price variables, time based validation, analyse different commodities and markets and regularly monitor the model.
+
+Tools Used:
+
+Python Pandas, NumPy, Scikit-learn, Matplotlib, Jupyter Notebook Git & GitHub
+
+Conclusion
+
+This has provided me with practical experience on how to evaluate regression models. I have learnt how to present models using metrics and graphics. It has shown me that choosing a model can be a complex process. The evaluation technique can be used on other applications within agribusiness such as crop yield forecasts and demand predictions if we have the right data.
+
+Report
+
+The report below shows how we evaluated our models. It explains our results and provides screenshots of our outputs from our notebook. It also includes our visual analysis. We have discussed any limitations and recommendations to improve further.
